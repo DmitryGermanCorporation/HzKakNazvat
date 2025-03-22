@@ -11,17 +11,18 @@
     <script src="https://yandex.ru/ads/system/context.js" async></script>
 </head>
 <body>
-    <script>
-        window.yaContextCb.push(() => {
-            Ya.Context.AdvManager.render({
-                "blockId": "R-A-14687292-1",
-                "renderTo": "yandex_rtb_R-A-14687292-1"
-            })
-        })
-    </script>
+
     <div id="unity-container" class="unity-desktop">
         <!-- Yandex.RTB R-A-14687292-1 -->
         <div id="yandex_rtb_R-A-14687292-1"></div>
+        <script>
+            window.yaContextCb.push(() => {
+                Ya.Context.AdvManager.render({
+                    "blockId": "R-A-14687292-1",
+                    "renderTo": "yandex_rtb_R-A-14687292-1"
+                })
+            })
+        </script>
         <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
         <div id="unity-loading-bar">
             <div id="unity-logo"></div>
